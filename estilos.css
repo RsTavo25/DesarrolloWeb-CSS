@@ -8,7 +8,8 @@ body{
 	margin: 0 auto;
 	font-family: Dancing Script;
 	color:white;
-
+	animation-name: entrada;
+	animation-duration: 0.5s;
 }
 header{
 	display: flex;
@@ -64,11 +65,23 @@ header{
 	width: 100%;
 }
 .imagen2{
+	text-align: center;
 	padding: 22.5px;
 	background-color: #d5c75f;
 	width: 45%;
 }
-
+.imagen2 a{
+	color:black;
+}
+.imagen2 a:hover{
+	text-decoration: none;
+}
+.imagen2 a:link{
+	text-decoration: none;
+}
+.imagen2 a:visited{
+	text-decoration: none;
+}
 .imagen2 img{
 	width: 100%;
 }
@@ -199,7 +212,7 @@ footer{
 	.foot {
 		width: 100%;
 	}
-	
+
 	.imagen2{
 		width: 100%;
 	}
@@ -207,4 +220,17 @@ footer{
 		width: 100%;
 	}
 
+}
+@keyframes entrada{
+	0% {
+		margin-top: 150%;
+	}
+	
+	60%{
+		margin-top: -5%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
 }
