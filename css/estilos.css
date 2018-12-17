@@ -1,0 +1,236 @@
+/***********************************************************/
+/*-------------------------HEADER--------------------------*/
+/***********************************************************/
+body{
+	background-color: #02010a;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: Dancing Script;
+	color:white;
+	animation-name: entrada;
+	animation-duration: 0.5s;
+}
+header{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background-color: #5b7989;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+#titulo{
+	width: 50%;
+	padding-left: 20px;	
+}
+#titulo h1{
+	text-shadow: 2px 2px #02010a;
+}
+#menu_principal{
+	padding-top: 10px;
+	text-align: right;
+	display: flex;
+	flex-flow: row wrap;
+	width: 45%;
+}
+.subrayado h2{
+	text-decoration: underline;
+}
+#menu_principal a:link{
+	color:white;
+	text-decoration: none;
+}
+#menu_principal a:visited{
+	color:white;
+	text-decoration: none;
+}
+#menu_principal div{
+	width: 30%;
+}
+/***********************************************************/
+/*-----------------------IMAGENES--------------------------*/
+/***********************************************************/
+#contenido{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.imagen1{
+	padding: 20px;
+	text-align: center;
+	background-color: #82c3a6;
+}
+.imagen1 img{
+	width: 100%;
+}
+.imagen2{
+	text-align: center;
+	padding: 22.5px;
+	background-color: #d5c75f;
+	width: 45%;
+}
+.imagen2 a{
+	color:black;
+}
+.imagen2 a:hover{
+	text-decoration: none;
+}
+.imagen2 a:link{
+	text-decoration: none;
+}
+.imagen2 a:visited{
+	text-decoration: none;
+}
+.imagen2 img{
+	width: 100%;
+}
+
+#img2{
+	transition-property: box-shadow;
+	transition-duration: 0.5s;
+}
+#img2:hover{
+	box-shadow: 2px 2px #82c3a6;
+}
+
+@keyframes img2Animation{
+	from{
+		transform:rotate(0deg);
+	
+	}
+	to{
+		transform:rotate(10deg);
+	
+	}
+}
+
+#img2:hover{
+	transform:rotate(10deg);
+	animation-name: img2Animation;
+	animation-duration: 2s;
+}
+
+@keyframes img3Animation{
+	0% {
+		position: relative;
+		bottom: 0px;
+		left: 0px;
+	}
+	20%{
+		position: relative;
+		bottom: 1px;
+		left: 2px;
+	}
+	40%{
+		position: relative;
+		bottom: 2px;
+		left: 4px;
+	}
+	60%{
+		position: relative;
+		bottom: 3px;
+		left: 6px;
+	}
+	80%{
+		position: relative;
+		bottom: 4px;
+		left: 8px;
+	}
+	100% {
+		position: relative;
+		bottom: 5px;
+		left:10px;
+	}
+}
+
+#img3:hover{
+	position:relative;
+	bottom: 5px;
+	left: 10px;
+	animation-name: img3Animation;
+	animation-duration: 0.5s;
+}
+#img3{
+	transition-property: box-shadow;
+	transition-duration: 0.5s;
+}
+#img3:hover{
+	box-shadow: 2px 2px #82c3a6;
+}
+#img2{
+	box-shadow: 2px 2px black;
+}
+#img3{
+	box-shadow: 2px 2px black;
+}
+
+/***********************************************************/
+/*-------------------------FOOTER--------------------------*/
+/***********************************************************/
+
+footer{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #C6d5c5;
+	color:black;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.foot{
+	width:22.5%;
+	padding: 10px;
+}
+.foot #Wimg{
+	text-align: center;
+}
+.foot h3{
+	text-align: center;
+}
+.foot img{
+	width:30%;
+}
+
+@media (max-width:900px){
+	#titulo{
+		padding-left: 0px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#menu_principal{
+		padding-top: 10px;
+		text-align: center;
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	#menu_principal div{
+	width: 33.3%;
+	}
+	.foot {
+		width: 100%;
+	}
+
+	.imagen2{
+		width: 100%;
+	}
+	.imagen1{
+		width: 100%;
+	}
+
+}
+@keyframes entrada{
+	0% {
+		margin-top: 150%;
+	}
+	
+	60%{
+		margin-top: -5%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+}
